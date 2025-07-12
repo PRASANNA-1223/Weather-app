@@ -5,9 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+   </head>
 <body>
-    
+    <main class="main-container">
+        <header class="input-container">
+            <input type="text" class="city-input" placeholder="Search City">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">search</span>
+            </button>
+        </header>
+        <section class="weather-info">
+            <div class="location-date-conrainer">
+                <div class="location">
+               <span class="material-symbols-outlined">
+                        location_on
+              </span>
+                    <h4 class="country-txt">Tamil Nadu</h4>
+                </div>
+                <h5 class="current-date-txt regular-txt">Fri, 11 Jul</h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="/weather/clouds.svg" class="weather-summary-img">
+                <div class="weather-summary-info">
+                    <h1 class="temp-txt">29 °C</h1>
+                    <h3 class="condition-txt regular-txt">Clouds</h3>
+                </div>
+            </div>
+
+            <div class="weather-condition-container">
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">water_drop</span>
+                <div class="condition-info">
+                    <h5 class="regular-txt">Humidity</h5>
+                    <h5 class="humidity-value-txt">55%</h5>
+                </div>
+                </div>
+                
+                <div class="condition-item">
+                    <span class="material-symbols-outlined">air</span>
+                <div class="condition-info">
+                    <h5 class="regular-txt">Wind Speed</h5>
+                    <h5 class="wind-value-txt">2 M/S</h5>
+                </div>
+                </div>
+                
+            </div>
+            <div class="forecast-item-container">
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">11 Jul</h5>
+                        <img src="/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast item temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">11 Jul</h5>
+                        <img src="/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast item temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">11 Jul</h5>
+                        <img src="/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast item temp">29 °C</h5>
+                </div>
+
+                <div class="forecast-item">
+                    <h5 class="forecast-item-date regular-txt">11 Jul</h5>
+                        <img src="/weather/thunderstorm.svg" class="forecast-item-img">
+                    <h5 class="forecast item temp">29 °C</h5>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
 </body>
 <script src="script.js"></script>
 </html>
