@@ -5,17 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    
+    <!-- google font -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
    </head>
 <body>
     <main class="main-container">
+
         <header class="input-container">
             <input type="text" class="city-input" placeholder="Search City">
             <button class="search-btn">
                 <span class="material-symbols-outlined">search</span>
             </button>
         </header>
-        <section class="weather-info">
+
+        <section class="weather-info" style="display: none;">
             <div class="location-date-conrainer">
                 <div class="location">
                <span class="material-symbols-outlined">
@@ -80,7 +85,29 @@
             </div>
 
         </section>
+
+
+        <section class="search-city section-message">
+           <img src="/message/search-city.png" alt="">
+            <div>
+            <h1>Search City</h1>
+            <h4 class="regular-txt">
+            Find out the weather condition of city
+            </h4>
+            </div> 
+        </section> 
+
+        <section class="not-found section-message" style="display: none;">
+           <img  src="/message/not-found.png" alt="">
+            <div>
+            <h1>Search City</h1>
+            <h4 class="regular-txt">
+            Find out the weather condition of city
+            </h4>
+            </div> 
+        </section>
+
     </main>
 </body>
-<script src="script.js"></script>
+
 </html>
